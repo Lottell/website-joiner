@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+  </head>
+  <body>
+    <!-- header start  -->
+    <header class="header-contact">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="brand-name">
+              <a href="{% url 'index' %}">Guus Schambergen.</a>
+          </div>
+          <nav class="nav-contact">
+              <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'index' %}">About</a></li>
+                <li><a href="{% url 'index' %}">Works</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+              </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header end  -->
+    <!-- contact section start -->
+    <section class="contact-page">
+        <div class="container">
+          <div class="row">
+            <div class="contact-img">
+              <div class="img-box">
+                <div class="section-title">
+                  <h1>Contact Me</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact-form">
+              {% csrf_token %}
+              <form class="form" action="{% url 'contact' %}" method="post">
+                <div class="row">
+                  <div class="left input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Name Here" class="input-control" name="message-name" value="">
+                  </div>
+                  <div class="right input-group">
+                    <label>Email</label>
+                    <input type="text" placeholder="Your Email Here" class="input-control" name="message-email" value="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-group">
+                    <label>Message</label>
+                    <textarea class="input-control" placeholder="Your Message Here" name="message" rows="8" cols="80"></textarea>
+                  </div>
+                </div>
+                <div class="form-btn">
+                  <button type="button" class="btn btn-01" name="button">Send Message</button>
+                </div>
+                {% if message_name %}
+                  <h2>Thanks {{ message_name }}! We received your email.</h2>
+                {% endif %}
+                <div class="sent">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact-info">
+              <div class="row">
+                <!--info item start-->
+                <div class="info-item">
+                  <h5>Adres</h5>
+                  <p>Straat 31, Den Bosch</p>
+                </div>
+                <!--info item end-->
+                <!--info item start-->
+                <div class="info-item">
+                  <h5>Telefoon</h5>
+                  <p>06-12345678</p>
+                </div>
+                <!--info item end-->
+                <!--info item start-->
+                <div class="info-item">
+                  <h5>Email</h5>
+                  <p>guus@apenstaart.nl</p>
+                </div>
+                <!--info item end-->
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="social-links">
+              <a href="" title="facebook"><img src="../static/facebook.svg" alt="Facebook"></a>
+              <a href="" title="twitter"><img src="../static/twitter.svg" alt="Twitter"></a>
+              <a href="" title="linkedin"><img src="../static/linkedin.svg" alt="Linkedin"></a>
+              <a href="" title="instagram"><img src="../static/instagram.svg" alt="Instagram"></a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+    <!--copyright text-->
+    <p class="copyright">&copy; Lotte Tjebbes</p>
+    <p class="copyright-email">lottell@icloud.com</p>
+  </body>
+</html>

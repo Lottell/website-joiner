@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Guus Schambergen</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+  </head>
+  <body>
+
+    <!-- header start  -->
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="brand-name">
+              <a href="{% url 'index' %}">Guus Schambergen.</a>
+          </div>
+          <nav class="nav">
+              <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header end  -->
+
+    <!-- home section start -->
+    <section class="home-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="home-content">
+              <h4>Guus Schambergen</h4>
+              <h1>Meubelmaker</h1>
+            </div>
+          </div>
+        </div>
+        <!-- scroll down -->
+        <a href="#about" class="scroll-down">
+            <img src="../static/scroll-down-arrow.png" alt="Scroll Down">
+        </a>
+    </section>
+    <!-- home section end -->
+
+    <!--about section start-->
+    <div id="about">
+      <section class="about-section">
+        <div class="container">
+          <div class="row"><div class="about-img">
+              <div class="img-box">
+                <img src="../static/me.jpg" alt="About Me">
+              </div>
+            </div>
+            <div class="about-content">
+              <div class="row">
+                <div class="section-title">
+                  <h1>About Me</h1>
+                </div>
+              </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tortor ex. Donec volutpat vulputate ornare. Nam iaculis vitae nisi vitae hendrerit. Maecenas nec odio nunc. Mauris sed enim pellentesque, pellentesque dui a, ornare dui. Curabitur id nunc leo. Vestibulum est magna, sagittis id facilisis at, condimentum nec sapien. Nulla quis nulla viverra, mollis augue ut, auctor eros. Morbi viverra finibus velit sed posuere. Pellentesque eget purus eros. Sed orci risus, maximus at metus sed, fermentum rutrum ipsum. Donec ac elit diam.</p>
+                <div class="stats">
+                  <div class="row">
+                    <div class="stat-box">
+                      <h2></h2>
+                      <h5></h5>
+                    </div>
+                    <div class="stat-box">
+                      <h2></h2>
+                      <h5></h5>
+                    </div>
+                    <div class="stat-box">
+                      <h2></h2>
+                      <h5></h5>
+                    </div>
+                    <div class="stat-box">
+                      <h2></h2>
+                      <h5></h5>
+                    </div>
+                  </div>
+                </div>
+                <!--contact btn-->
+                <a href="{% url 'contact' %}" class="btn btn-01">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--about section end-->
+
+    <!--work section start-->
+    <div id="works">
+      <br>
+      <section class="work-section">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h1>My Works</h1>
+            </div>
+          </div>
+          <div class="row">
+            <!--work item start-->
+              <div class="work-item">
+                <div class="work-item-inner">
+                  <img src="../static/small/1.jpg" data-large='../static/large/1.jpg' alt="work">
+                  <div class="overlay">
+                    <h4>TV Meubel</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tortor ex. Donec volutpat vulputate ornare.</p>
+                  </div>
+                </div>
+              </div>
+            <!--work item end-->
+            <!--work item start-->
+              <div class="work-item">
+                <div class="work-item-inner">
+                  <img src="../static/small/2.jpg" data-large='../static/large/2.jpg' alt="work">
+                  <div class="overlay">
+                    <h4>Wastafel Meubel</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tortor ex. Donec volutpat vulputate ornare.</p>
+                  </div>
+                </div>
+              </div>
+            <!--work item end-->
+            <!--work item start-->
+              <div class="work-item">
+                <div class="work-item-inner">
+                  <img src="../static/small/3.jpg" data-large='../static/large/3.jpg' alt="work">
+                  <div class="overlay">
+                    <h4>Veranda</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tortor ex. Donec volutpat vulputate ornare.</p>
+                  </div>
+                </div>
+              </div>
+            <!--work item end-->
+            <!--work item start-->
+              <div class="work-item">
+                <div class="work-item-inner">
+                  <img src="../static/small/4.jpg" data-large='../static/large/4.jpg' alt="work">
+                  <div class="overlay">
+                    <h4>Hottub</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tortor ex. Donec volutpat vulputate ornare.</p>
+                  </div>
+                </div>
+              </div>
+            <!--work item end-->
+            <!--work item start-->
+              <div class="work-item">
+                <div class="work-item-inner">
+                  <img src="../static/small/5.jpg" data-large='../static/large/5.jpg' alt="work">
+                  <div class="overlay">
+                    <h4>Wastafel Meubel</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tortor ex. Donec volutpat vulputate ornare.</p>
+                  </div>
+                </div>
+              </div>
+            <!--work item end-->
+            <!--work item start-->
+              <div class="work-item">
+                <div class="work-item-inner">
+                  <img src="../static/small/6.jpg" data-large='../static/large/6.jpg' alt="work">
+                  <div class="overlay">
+                    <h4>TV Meubel</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tortor ex. Donec volutpat vulputate ornare.</p>
+                  </div>
+                </div>
+              </div>
+            <!--work item end-->
+          </div>
+        </div>
+      </section>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--work section end-->
+
+      <!--contact section start-->
+      <div id="contact">
+        <section class="contact-section">
+          <div class="section-title-contact">
+            <h1>Interested?</h1>
+          </div>
+          <a href="mailto:lottell@icloud.com" class="btn btn-01" >Email Me</a>
+          <a href="tel:0031683388954" class="btn btn-01">Call Me</a>
+        </section>
+        <section class="contact-page">
+          <div class="row">
+            <div class="contact-info">
+              <div class="row">
+                <!--info item start-->
+                <div class="info-item">
+                  <h5>Adres</h5>
+                  <a href="https://www.google.nl/maps/place/''s-Hertogenbosch'/@51.7149042,5.248139,12z/data=!3m1!4b1!4m5!3m4!1s0x47c6ee37ad3edd37:0x400de5a8d1e7c50!8m2!3d51.6978162!4d5.3036748">Straat 31, Den Bosch</a>
+                </div>
+                <!--info item end-->
+                <!--info item start-->
+                <div class="info-item">
+                  <h5>Telefoon</h5>
+                  <a href="tel:0031683388954">06-12345678</a>
+                </div>
+                <!--info item end-->
+                <!--info item start-->
+                <div class="info-item">
+                  <h5>Email</h5>
+                  <a href="mailto:lottell@icloud.com">guus@apenstaart.nl</a>
+                </div>
+                <!--info item end-->
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="social-links">
+              <a href="https://www.facebook.com/guus.schambergen" title="facebook"><img src="../static/facebook.svg" alt="Facebook"></a>
+              <a href="" title="twitter"><img src="../static/twitter.svg" alt="Twitter"></a>
+              <a href="https://nl.linkedin.com/in/guus-schambergen-bba8a6b7?challengeId=AQE_I-_w-cSmAAAAAXQwpEwK3SxMfH4CBSJ6cV_D9oIR6ApSylN8rzQVX11Xkq-T1dyRtYBnWYw0T5bqxWxRIN2R2J7McbbGhg&submissionId=a62e60f1-362b-2f16-dd3d-1139b94f344e" title="linkedin"><img src="../static/linkedin.svg" alt="Linkedin"></a>
+              <a href="" title="instagram"><img src="../static/instagram.svg" alt="Instagram"></a>
+            </div>
+          </div>
+        </div>
+        </section>
+        </section>
+      </div>
+    <!-- contact section end -->
+    <!--copyright text-->
+    <p class="copyright">&copy; Lotte Tjebbes</p>
+    <p class="copyright-email">lottell@icloud.com</p>
+  </body>
+</html>
